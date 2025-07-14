@@ -1,1 +1,55 @@
 /*  your css code here. If applicable */
+body
+{
+	font-family: Arial, sans-serif;
+	padding:20px;
+}
+
+h1
+{
+	text-align:center;
+	colo: #333;
+}
+
+table.middle
+{
+	border: 1px solid black;
+		border-spacing: 1px;
+	padding:1px;
+	margin: 30px auto;
+}
+
+td, th
+{
+	border: 1px solid black;
+	padding: 5px;
+	text-align: left;
+}
+
+.center
+{
+	text-align: center;
+}
+
+.right
+{
+	text-align: center;
+}
+
+.green
+{
+	background-color:green;
+	color: white;
+}
+
+.blue
+{
+	background-color: blue;
+	color:white;
+}
+
+img
+{
+	max-width:100px;
+	height:auto;
+}
