@@ -1,68 +1,38 @@
- body 
-{
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
- }
-
-    .container 
-{
-      width: 1100px;
-      margin: 40px auto;
-      background-color: #fff;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+/* General styling */
+table {
+  margin: 20px auto;
+  border-spacing: 10px;
+  padding: 10px;
 }
 
-    h1 
-{
-      text-align: center;
-      color: #2c3e50;
-      margin-bottom: 30px;
-    }
+/* Table 1 styling */
+.table1 td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
 
-    .imageContainer 
-{
-      text-align: center;
-      margin-bottom: 30px;
-    }
+/* Table 2 styling: no visible grid */
+.table2 td {
+  padding: 10px;
+  border: none;
+}
 
-.imageContainer img 
-{
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    table 
-{
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    td {
-      vertical-align: top;
-      padding: 15px;
-      border: 1px solid #ccc;
-    }
-
-    td img 
-{
-      width: 100%;
-      height: auto;
-      border-radius: 6px;
-    }
-
-.textColumn 
-{
-      width: 600px;
-      color: #333;
-      font-size: 1.1em;
-      line-height: 1.6;
-    }
-
-    .imageColumn 
-{
-      width: 200px;
-    }
+/* Table 3 styling: image with visible grid */
+.table3 {
+  border-top: 5px solid green;
+  border-bottom: 5px solid blue;
+}
+.table3 td {
+  border: 1px solid #000;
+  padding: 0;
+}
+.image {
+  width: 100%;
+  display: block;
+}
