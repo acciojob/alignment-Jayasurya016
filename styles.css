@@ -1,14 +1,18 @@
-/* General styling */
+/* General table styling */
 table {
   margin: 20px auto;
   border-spacing: 10px;
   padding: 10px;
+  width: 80%;
 }
 
-/* Table 1 styling */
+/* Table 1: Alignment classes */
 .table1 td {
   padding: 10px;
   border: 1px solid #ccc;
+}
+.left {
+  text-align: left;
 }
 .center {
   text-align: center;
@@ -17,18 +21,19 @@ table {
   text-align: right;
 }
 
-/* Table 2 styling: no visible grid */
+/* Table 2: Grid with merged cells */
 .table2 td {
   padding: 10px;
   border: none;
+  background-color: #f9f9f9;
 }
 
-/* Table 3 styling: image with visible grid */
+/* Table 3: Image with colored borders */
 .table3 {
-  border-top: 5px solid green;
-  border-bottom: 5px solid blue;
+  border-top: 10px solid green;
+  border-bottom: 10px solid blue;
 }
-.table3 td {
+.image-cell {
   border: 1px solid #000;
   padding: 0;
 }
