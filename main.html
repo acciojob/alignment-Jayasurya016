@@ -1,97 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>HTML Assignment #3</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment #3</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	 <h2 class="middle">HTML Assignment #3</h2>
 
-    <!-- Table 1 -->
-    <table id="table1">
+    <h1 class="center-aligned">HTML Assignment #3</h1>
+
+    <table id="table-1" class="middle">
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="t11">left</td>
+                <td class="middle-cell">center</td>
+                <td id="t12" class="right-cell">right</td>
+            </tr>
+            <tr class="middle-row">
+                <td>left</td>
+                <td class="middle-cell">center</td>
+                <td id="t13" class="right-cell">right</td>
+            </tr>
+            <tr>
+                <td>left</td>
+                <td class="middle-cell">center</td>
+                <td class="right-cell">right</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table id="table-2" class="middle">
         <tr>
-            <td class="middle">left</td>
-            <td class="middle">center</td>
-            <td class="middle">right</td>
+            <td id="t21" colspan="6"></td>
         </tr>
         <tr>
-            <td class="middle">left</td>
-            <td class="middle">center</td>
-            <td class="middle">right</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="middle">left</td>
-            <td class="middle">center</td>
-            <td class="middle">right</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
     </table>
 
-    <!-- Table 2 -->
-    <table id="table2">
+    <table id="table-3" class="middle">
         <tr>
-            <td colspan="6" class="middle">First cell</td>
+            <td colspan="3" class="green"></td>
         </tr>
         <tr>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
+            <td class="image-cell" colspan="3"><img id="t-image" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Michael_Jordan_by_Steve_Lipofsky_2.jpg" alt="A person dunking a basketball"></td>
         </tr>
         <tr>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-        </tr>
-        <tr>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-        </tr>
-        <tr>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-        </tr>
-        <tr>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
-            <td class="middle">cell</td>
+            <td colspan="3" class="blue"></td>
         </tr>
     </table>
-
-    <!-- Table 3 -->
-    <table id="table3">
-        <tr class="green img-row">
-            <td class="middle" colspan="3"></td>
-        </tr>
-        <tr>
-            <td class="middle"></td>
-            <td class="middle">
-                <img src="https://i.imgur.com/8Km9tLL.jpg" alt="Sample Image" style="max-width: 100%; max-height: 140px;">
-            </td>
-            <td class="middle"></td>
-        </tr>
-        <tr class="blue img-row">
-            <td class="middle" colspan="3"></td>
-        </tr>
-    </table>
-
-
 
 </body>
 </html>

@@ -1,29 +1,52 @@
 body {
-            font-family: Arial, sans-serif;
-        }
-        h2 {
-            text-align: center;
-        }
-        table {
-            border-collapse: collapshttps://www.svgrepo.com/show/345221/three-dots.svge;
-            margin-bottom: 20px;
-            width: 100%;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 1px;
-            text-align: center;
-        }
-        .middle {
-            text-align: center;
-        }
-        .green {
-            background-color: green;
-        }
-        .blue {
-            background-color: blue;
-        }
-        /* For table 3, keep rows fixed heights for demonstration */
-        .img-row {
-            height: 140px;
-        }
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.center-aligned {
+    text-align: center;
+}
+
+.middle {
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 1px;
+    width: 100%;
+}
+
+.middle th,
+.middle td {
+    border: 1px solid black;
+    padding: 1px;
+}
+
+#table-1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#table-1 .right-cell {
+    text-align: right;
+}
+
+#table-2 {
+    margin-top: 20px;
+}
+
+#table-3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#table-3 .green {
+    background-color: green;
+}
+
+#table-3 .blue {
+    background-color: blue;
+}
+
+#table-3 img {
+    max-width: 100%;
+    height: auto;
+}
