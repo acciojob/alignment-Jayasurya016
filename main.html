@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Assignment #3</title>
+    <title>HTML Assignment 3</title>
     <style>
         /* General styling for the body */
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
         }
-        
+
         /* Heading styling */
         h1 {
             text-align: center;
@@ -18,36 +18,49 @@
 
         /* General table styling */
         table {
-            border-collapse: collapse;
+            border-collapse: separate;
+            border-spacing: 1px;
             margin-bottom: 20px;
+            width: 100%;
         }
 
         table, th, td {
             border: 1px solid black;
-            padding: 1px; /* Changed from 10px to 1px to pass the test */
+            padding: 1px;
         }
 
-        /* Classes for specific table requirements */
-        .middle, .center {
+        /* All tables should have the class "middle" */
+        table.middle {
+            text-align: center;
+        }
+
+        /* Classes for specific cell requirements */
+        .center {
             text-align: center;
         }
 
         .right {
             text-align: right;
         }
+        
+        /* Table 1 classes */
+        #table-1 {
+            width: auto;
+        }
 
-        /* Specific styling for the third table */
+        /* Table 3 classes and IDs */
         .green {
-            background-color: lightgreen;
+            background-color: green;
         }
 
         .blue {
-            background-color: lightblue;
+            background-color: blue;
         }
 
-        /* Styling for the image cell */
         #t-image {
-            width: 100%;
+            text-align: center;
+            vertical-align: middle;
+            background-color: transparent !important;
         }
 
         #t-image img {
@@ -62,7 +75,7 @@
     <h1>HTML Assignment #3</h1>
 
     <!-- Table 1: 3 rows, 3 columns -->
-    <table id="table-1">
+    <table id="table-1" class="middle">
         <tr>
             <td id="t11">left</td>
             <td id="t12" class="center">center</td>
@@ -70,18 +83,18 @@
         </tr>
         <tr>
             <td>left</td>
-            <td class="middle">center</td>
+            <td class="center">center</td>
             <td class="right">right</td>
         </tr>
         <tr>
             <td>left</td>
-            <td class="middle">center</td>
+            <td class="center">center</td>
             <td class="right">right</td>
         </tr>
     </table>
 
     <!-- Table 2: 6 rows, 6 columns, 1st row in a single cell -->
-    <table id="table-2">
+    <table id="table-2" class="middle">
         <tr>
             <td colspan="6" id="t21">Table-2: First Cell: "t21"</td>
         </tr>
@@ -128,7 +141,7 @@
     </table>
 
     <!-- Table 3: Include an image -->
-    <table id="table-3">
+    <table id="table-3" class="middle">
         <tr>
             <td class="green"></td>
             <td></td>
@@ -136,7 +149,7 @@
         </tr>
         <tr>
             <td></td>
-            <td id="t-image"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Michael_Jordan_and_Jeff_Malone_1985.jpg" alt="Michael Jordan"></td>
+            <td id="t-image"><img src="https://user-images.githubusercontent.com/78348500…17435540-555a8eb0-79a6-4590-90c0-28b620341d42.png" alt="Michael Jordan"></td>
             <td></td>
         </tr>
         <tr>
