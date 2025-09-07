@@ -4,42 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Assignment #3</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        /* Heading styling */
+        h1 {
+            text-align: center;
+        }
+
+        /* General table styling */
+        table {
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        /* Classes for specific table requirements */
+        .middle {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        /* Specific styling for the third table */
+        .green {
+            background-color: lightgreen;
+        }
+
+        .blue {
+            background-color: lightblue;
+        }
+
+        /* Styling for the image cell */
+        #t-image {
+            width: 100%;
+        }
+
+        #t-image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
 </head>
 <body>
 
-    <h1 class="center-aligned">HTML Assignment #3</h1>
+    <h1>HTML Assignment #3</h1>
 
-    <table id="table-1" class="middle">
-        <thead>
-            <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td id="t11">left</td>
-                <td class="middle-cell">center</td>
-                <td id="t12" class="right-cell">right</td>
-            </tr>
-            <tr class="middle-row">
-                <td>left</td>
-                <td class="middle-cell">center</td>
-                <td id="t13" class="right-cell">right</td>
-            </tr>
-            <tr>
-                <td>left</td>
-                <td class="middle-cell">center</td>
-                <td class="right-cell">right</td>
-            </tr>
-        </tbody>
+    <!-- Table 1: 3 rows, 3 columns -->
+    <table id="table-1">
+        <tr>
+            <td id="t11">left</td>
+            <td id="t12" class="middle">center</td>
+            <td id="t13" class="right">right</td>
+        </tr>
+        <tr>
+            <td>left</td>
+            <td class="middle">center</td>
+            <td class="right">right</td>
+        </tr>
+        <tr>
+            <td>left</td>
+            <td class="middle">center</td>
+            <td class="right">right</td>
+        </tr>
     </table>
 
-    <table id="table-2" class="middle">
+    <!-- Table 2: 6 rows, 6 columns, 1st row in a single cell -->
+    <table id="table-2">
         <tr>
-            <td id="t21" colspan="6"></td>
+            <td colspan="6" id="t21">Table-2: First Cell: "t21"</td>
         </tr>
         <tr>
             <td></td>
@@ -83,15 +127,22 @@
         </tr>
     </table>
 
-    <table id="table-3" class="middle">
+    <!-- Table 3: Include an image -->
+    <table id="table-3">
         <tr>
-            <td colspan="3" class="green"></td>
+            <td class="green"></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td class="image-cell" colspan="3"><img id="t-image" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Michael_Jordan_by_Steve_Lipofsky_2.jpg" alt="A person dunking a basketball"></td>
+            <td></td>
+            <td id="t-image"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Michael_Jordan_and_Jeff_Malone_1985.jpg" alt="Michael Jordan"></td>
+            <td></td>
         </tr>
         <tr>
-            <td colspan="3" class="blue"></td>
+            <td class="blue"></td>
+            <td></td>
+            <td></td>
         </tr>
     </table>
 
